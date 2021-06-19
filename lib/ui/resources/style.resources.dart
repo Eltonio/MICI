@@ -16,9 +16,9 @@ extension CustomInputDecoration on InputDecorationTheme {
 
   InputDecoration get inputOnWhiteBg {
     return InputDecoration(
-      labelStyle: TextStyle(color: Colors.grey[700]),
+      labelStyle: TextStyle(color: Colors.white),
       errorStyle: TextStyle(color: Colors.redAccent),
-      fillColor: Colors.white,
+      fillColor: Colors.transparent,
       filled: true,
       errorBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: Colors.red),

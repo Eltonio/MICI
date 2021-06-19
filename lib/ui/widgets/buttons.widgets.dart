@@ -7,10 +7,15 @@ class TransparentButtonBig extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
   final double marginTop;
+  final Color color;
 
-  TransparentButtonBig(
-      {Key? key, required this.text, required this.onPressed, this.marginTop = 10.0})
-      : super(key: key);
+  TransparentButtonBig({
+    Key? key,
+    required this.text,
+    required this.onPressed,
+    required this.color,
+    this.marginTop = 10.0,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext ctx) {
@@ -20,7 +25,7 @@ class TransparentButtonBig extends StatelessWidget {
       width: MediaQuery.of(ctx).size.width,
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
-          backgroundColor: primaryColor,
+          backgroundColor: color,
           side: BorderSide(width: 0.0, color: Colors.white),
           elevation: 0.0,
           shape: RoundedRectangleBorder(

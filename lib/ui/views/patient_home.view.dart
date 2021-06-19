@@ -3,12 +3,12 @@ import 'package:mici/routes/routes.dart';
 import 'package:mici/ui/resources/colors.resources.dart';
 import 'package:mici/ui/widgets/buttons.widgets.dart';
 
-class LandingView extends StatefulWidget {
+class PatientHomeView extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _landingState();
+  State<StatefulWidget> createState() => _patientHomeState();
 }
 
-class _landingState extends State<LandingView> {
+class _patientHomeState extends State<PatientHomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,13 +30,13 @@ class _landingState extends State<LandingView> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TransparentButtonBig(
-                  text: 'Je suis un patient',
+                  text: 'Mon profil',
                   onPressed: (() => Navigator.pushNamed(context, patientStep1)),
                   color: primaryColor),
               TransparentButtonBig(
-                  text: 'Je suis un soignant', onPressed: (() {}), color: thirtyColor),
+                  text: 'Les centres experts MICI', onPressed: (() {}), color: thirtyColor),
               TransparentButtonBig(
-                  text: 'Je suis un promoteur', onPressed: (() {}), color: fortyColor),
+                  text: 'Mon essai clinique', onPressed: (() {}), color: fortyColor),
             ],
           ),
         ),

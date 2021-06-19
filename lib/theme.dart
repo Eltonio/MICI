@@ -18,6 +18,7 @@ ThemeData buildThemeData() {
   );
 
   return baseTheme.copyWith(
+      unselectedWidgetColor: Colors.white,
       primaryColor: primaryColor,
       primaryColorDark: primaryColor,
       primaryColorLight: primaryColor,
