@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mici/routes/routes.dart';
 import 'package:mici/ui/views/landing.view.dart';
+import 'package:mici/ui/views/patient_step1.view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   dynamic p;
@@ -8,6 +9,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case landingViewRoute:
       p = LandingView();
+      break;
+    case patientStep1:
+      p = PatientStep1View();
       break;
     /*case messagesViewRoute:
       p = MessagesView(chatId: settings.arguments.toString());
